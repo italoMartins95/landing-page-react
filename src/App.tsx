@@ -13,7 +13,7 @@ import './App.scss'
 function App() {
   return (
     <>
-      <Router>
+      <Router basename='/landing-page-react'>
         <Header />
         <Routes>
             <Route path='/' element={<Home />} />

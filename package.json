@@ -1,7 +1,7 @@
 {
   "name": "loja-online",
   "version": "0.1.0",
-  "homepage": "https://italomartins95.github.io/",
+  "homepage": "https://italomartins95.github.io/landing-page-react/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.7",
