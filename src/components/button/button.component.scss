@@ -1,0 +1,54 @@
+.button-primary{
+    height: 50px;
+
+    background-color: #505050;
+    color: white;
+
+    font-family: 'Inter';
+    font-size: 16px;
+
+    padding: 0 16px;
+    border-radius: 6px;
+
+    outline: none;
+    border: none;
+
+    cursor: pointer;
+}
+
+.button-disabled{
+    height: 50px;
+
+    background-color: #e1e1e1;
+    color: white;
+
+    font-family: 'Inter';
+    font-size: 16px;
+
+    padding: 0 16px;
+    border-radius: 6px;
+
+    outline: none;
+    border: none;
+
+    cursor: not-allowed;
+}
+
+.button-cancel{
+    height: 50px;
+
+    background-color: #F5F5F5;
+    color: #989898;
+    border: 2px #989898 solid;
+
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 16px;
+
+    padding: 0 16px;
+    border-radius: 6px;
+
+    outline: none;
+
+    cursor: pointer;
+}
