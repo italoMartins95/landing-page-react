@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/landing-page-react/static/css/main.8fb59bda.css",
+    "main.css": "/landing-page-react/static/css/main.3570fd5b.css",
     "main.js": "/landing-page-react/static/js/main.3298971a.js",
     "static/js/787.f08d3e1d.chunk.js": "/landing-page-react/static/js/787.f08d3e1d.chunk.js",
     "static/media/work.image.jpg": "/landing-page-react/static/media/work.image.afbb434c7c8afb612681.jpg",
@@ -12,12 +12,12 @@
     "static/media/catraca_idblock.png": "/landing-page-react/static/media/catraca_idblock.a849f7540c9e5e0c0488.png",
     "static/media/motorDeslizante.png": "/landing-page-react/static/media/motorDeslizante.7f9c97ca9ee1d599bddd.png",
     "index.html": "/landing-page-react/index.html",
-    "main.8fb59bda.css.map": "/landing-page-react/static/css/main.8fb59bda.css.map",
+    "main.3570fd5b.css.map": "/landing-page-react/static/css/main.3570fd5b.css.map",
     "main.3298971a.js.map": "/landing-page-react/static/js/main.3298971a.js.map",
     "787.f08d3e1d.chunk.js.map": "/landing-page-react/static/js/787.f08d3e1d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8fb59bda.css",
+    "static/css/main.3570fd5b.css",
     "static/js/main.3298971a.js"
   ]
 }
