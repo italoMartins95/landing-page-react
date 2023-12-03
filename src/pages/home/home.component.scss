@@ -279,20 +279,18 @@
 
     .about{
         position: relative;
-
         flex-direction: column-reverse;
+        justify-content: normal;
 
-        height: 600px;
-
-        padding-top: 20px;
+        height: 670px;
 
        .texts{
             width: calc(100% - 80px);
 
-            transform: translate(0, -30px);
+            transform: translate(0);
             border-radius: 0;            
 
-            padding: 40px 40px 20px 40px;
+            padding: 50px 40px 30px 40px;
 
             h1{
                 font-size: 24px;
@@ -304,7 +302,7 @@
             height: 300px;
             
             border-radius: 8px;
-            transform: translateX(0);
+            transform: translate(0 , 30px);
 
             z-index: 0;
        }
@@ -312,8 +310,11 @@
 
     .works{
         flex-direction: column;
+        gap: 24px;
 
         height: 610px;
+        
+        padding: 10px 30px 20px 30px;
 
         .itens{
             width: 100%;
@@ -324,6 +325,9 @@
                 
                 .carousel{
                     flex-direction: row;
+                    overflow-x: scroll;
+                    
+                    padding: 10px;
 
                     .image-item{
                         width: 100px;

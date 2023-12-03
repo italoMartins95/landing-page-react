@@ -22,20 +22,14 @@ function Home() {
 
         let position: number = index + 1;
         let transformPixels: number = 0;
-        let translate: string = 'translateY';
         let widthItem: number = 180;
 
         const carousel: HTMLDivElement = document.getElementById('carousel') as HTMLDivElement;
         const larguraDaJanela: boolean = Boolean(window.innerWidth <= 430);
 
-        if(larguraDaJanela){
-            translate = 'translateX';
-            widthItem = 100;
-        }
-
-        if(position >= 2){
+        if(position >= 2 && !larguraDaJanela){
             transformPixels = (position - 2) * widthItem;
-            carousel.style.transform = `${translate}(-${transformPixels}px)`;
+            carousel.style.transform = `translateY(-${transformPixels}px)`;
         }
     }
 
