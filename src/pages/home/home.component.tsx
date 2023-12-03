@@ -23,13 +23,19 @@ function Home() {
         let position: number = index + 1;
         let transformPixels: number = 0;
         let widthItem: number = 180;
+        let translate: string = 'translateY';
 
         const carousel: HTMLDivElement = document.getElementById('carousel') as HTMLDivElement;
         const larguraDaJanela: boolean = Boolean(window.innerWidth <= 430);
 
-        if(position >= 2 && !larguraDaJanela){
+        if(larguraDaJanela){
+            translate = 'translateX';
+            widthItem = 134;
+        }
+
+        if(position >= 2){
             transformPixels = (position - 2) * widthItem;
-            carousel.style.transform = `translateY(-${transformPixels}px)`;
+            carousel.style.transform = `${translate}(-${transformPixels}px)`;
         }
     }
 
