@@ -5,6 +5,11 @@ import Button from '../../components/button/button.component';
 import ItemCarousel from '../../components/itemCarousel/itemCarousel.component';
 import { TCategoryItem } from '../../types/categoryItem.type';
 
+import { SlHandbag } from "react-icons/sl";
+import { MdOutlineMarkEmailUnread } from "react-icons/md";
+import { LiaFileContractSolid } from "react-icons/lia";
+import { RiVerifiedBadgeLine } from "react-icons/ri";
+
 import './home.component.scss';
 
 function Home() {
@@ -97,6 +102,45 @@ function Home() {
                                 handleClick={() => navigate('/produtos')}
                         />                      
                     </div>
+                </article>
+            </section>
+            <section className='steps'>
+                <span className='progress'></span>
+                <article className='reverse'>
+                    <p>
+                        Selecione os itens que você deseja e adicione ao carrinho
+                    </p>
+                    <div>
+                        <SlHandbag />
+                    </div>
+                    <p className='hidden'></p>
+                </article>
+                <article>
+                    <p className='hidden'></p>
+                    <div>
+                        <MdOutlineMarkEmailUnread />
+                    </div>
+                    <p>
+                        Solicite um orçamento para os itens que você escolheu
+                    </p>                    
+                </article>
+                <article className='reverse'>
+                    <p>
+                        Dentro de poucos minutos você receberá uma proposta com a descrição dos equipamentos e serviços escolhidos por você
+                    </p>
+                    <div>
+                        <LiaFileContractSolid />
+                    </div>
+                    <p className='hidden'></p>
+                </article>
+                <article>
+                    <p className='hidden'></p>
+                    <div>
+                        <RiVerifiedBadgeLine />
+                    </div>
+                    <p>
+                        Negócio fechado! Um proficional vai até você para realizar a sua instalação completa.
+                    </p>
                 </article>
             </section>
         </main>

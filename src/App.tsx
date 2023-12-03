@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
-import Header from './components/header/header.component'
+import Header from './components/header/header.component';
+import Footer from './components/footer/footer.component';
 import Home from './pages/home/home.component';
 import Products from './pages/products/products.component';
 import Login from './pages/login/login.component';
@@ -22,6 +23,7 @@ function App() {
             <Route path='/area-cliente' element={<AreaCliente />} />
             <Route path='/area-administrador' element={<AreaAdministrador />} />
         </Routes>
+        <Footer />
       </Router>
     </>
   );
