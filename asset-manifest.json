@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.47f46f46.css",
-    "main.js": "/static/js/main.a2abb652.js",
-    "static/js/787.f08d3e1d.chunk.js": "/static/js/787.f08d3e1d.chunk.js",
-    "static/media/work.image.jpg": "/static/media/work.image.afbb434c7c8afb612681.jpg",
-    "static/media/wellcome.image.png": "/static/media/wellcome.image.8a9f59cc121a2f2157e0.png",
-    "static/media/idFlex.webp": "/static/media/idFlex.833d3bce1895c98c5ba5.webp",
-    "static/media/central-de-alarme.png": "/static/media/central-de-alarme.b9cd45ee8579138515a5.png",
-    "static/media/interfone.png": "/static/media/interfone.57c8acf1b5dfbe2a3a04.png",
-    "static/media/camera_hilook.png": "/static/media/camera_hilook.7b872d88f397cff2f74a.png",
-    "static/media/catraca_idblock.png": "/static/media/catraca_idblock.a849f7540c9e5e0c0488.png",
-    "static/media/motorDeslizante.png": "/static/media/motorDeslizante.7f9c97ca9ee1d599bddd.png",
-    "index.html": "/index.html",
-    "main.47f46f46.css.map": "/static/css/main.47f46f46.css.map",
-    "main.a2abb652.js.map": "/static/js/main.a2abb652.js.map",
-    "787.f08d3e1d.chunk.js.map": "/static/js/787.f08d3e1d.chunk.js.map"
+    "main.css": "/landing-page-react/static/css/main.3499739f.css",
+    "main.js": "/landing-page-react/static/js/main.dc790584.js",
+    "static/js/787.f08d3e1d.chunk.js": "/landing-page-react/static/js/787.f08d3e1d.chunk.js",
+    "static/media/work.image.jpg": "/landing-page-react/static/media/work.image.afbb434c7c8afb612681.jpg",
+    "static/media/wellcome.image.png": "/landing-page-react/static/media/wellcome.image.8a9f59cc121a2f2157e0.png",
+    "static/media/idFlex.webp": "/landing-page-react/static/media/idFlex.833d3bce1895c98c5ba5.webp",
+    "static/media/central-de-alarme.png": "/landing-page-react/static/media/central-de-alarme.b9cd45ee8579138515a5.png",
+    "static/media/interfone.png": "/landing-page-react/static/media/interfone.57c8acf1b5dfbe2a3a04.png",
+    "static/media/camera_hilook.png": "/landing-page-react/static/media/camera_hilook.7b872d88f397cff2f74a.png",
+    "static/media/catraca_idblock.png": "/landing-page-react/static/media/catraca_idblock.a849f7540c9e5e0c0488.png",
+    "static/media/motorDeslizante.png": "/landing-page-react/static/media/motorDeslizante.7f9c97ca9ee1d599bddd.png",
+    "index.html": "/landing-page-react/index.html",
+    "main.3499739f.css.map": "/landing-page-react/static/css/main.3499739f.css.map",
+    "main.dc790584.js.map": "/landing-page-react/static/js/main.dc790584.js.map",
+    "787.f08d3e1d.chunk.js.map": "/landing-page-react/static/js/787.f08d3e1d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.47f46f46.css",
-    "static/js/main.a2abb652.js"
+    "static/css/main.3499739f.css",
+    "static/js/main.dc790584.js"
   ]
 }
