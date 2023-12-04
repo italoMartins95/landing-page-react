@@ -369,6 +369,10 @@
 
     .steps{
         height: 700px;
+
+        .progress{
+            height: 600px;
+        }
         
         article{
             p{
@@ -437,9 +441,14 @@
         justify-content: normal;
         gap: 20px;
 
-        height: 670px;
+        width: calc(100% - 40px);
+        height: 630px;
         
-        padding: 10px 30px 20px 30px;
+        padding: 20px;
+
+        h1{
+            padding: 0;
+        }
 
         .itens{
             width: 100%;
@@ -460,37 +469,6 @@
                 }
             }
         }
-
-        .viewItemSelect{
-            gap: 10px;
-            
-            width: calc(100% - 60px);
-            padding: 20px 30px;
-
-            .image{
-                width: 150px;
-                height: 150px;
-            }
-
-            .description{
-                justify-content: space-between;
-                gap: 20px;
-
-                min-height: 224px;
-
-                h1{
-                    font-size: 20px;
-                }
-
-                p{
-                    font-size: 16px;
-                    font-weight: 300;
-                    line-height: 22px;
-
-                    margin-bottom: 0;
-                }
-            }
-        }
     }
 
     .steps{
@@ -499,7 +477,8 @@
         .progress{
             left: 14%;
             transform: translate(-60%, -50%);
-            height: 80vh;
+
+            height: 500px;
         }
 
         article{
