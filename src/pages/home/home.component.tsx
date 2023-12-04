@@ -2,46 +2,55 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { carrouselItens } from '../../products/carousel.itens';
 import Button from '../../components/button/button.component';
-import ItemCarousel from '../../components/itemCarousel/itemCarousel.component';
 import { TCategoryItem } from '../../types/categoryItem.type';
 
 import { SlHandbag } from "react-icons/sl";
-import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { LiaFileContractSolid } from "react-icons/lia";
+import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { RiVerifiedBadgeLine } from "react-icons/ri";
+import { MdArrowBack } from "react-icons/md";
+import { MdArrowForward } from "react-icons/md";
 
 import './home.component.scss';
 
 function Home() {
 
     const [viewItem, setViewItem] = useState<TCategoryItem>(carrouselItens[0]);
+    const [carouselPosition, setCarouselPosition] = useState<number>(0);
+    const [viewButtonBack, setViewButtonBack] = useState<boolean>(false);
+    const [viewButtonFor, setViewButtonFor] = useState<boolean>(true);
 
     const navigate = useNavigate();
 
-    const selectItem = (item: TCategoryItem, indexItem: number) => {
-        setViewItem(item);
-        spinCarousel(indexItem);
-    }
-
-    const spinCarousel = (index: number) => {
-
-        let position: number = index + 1;
-        let transformPixels: number = 0;
-        let widthItem: number = 180;
-        let translate: string = 'translateY';
+    const spinCarousel = (direction: 'left' | 'right') => {
+        const forWard: boolean = Boolean(direction == 'right');
 
         const carousel: HTMLDivElement = document.getElementById('carousel') as HTMLDivElement;
-        const larguraDaJanela: boolean = Boolean(window.innerWidth <= 430);
 
-        if(larguraDaJanela){
-            translate = 'translateX';
-            widthItem = 134;
-        }
+        const widthWindow: number = window.innerWidth;
+        const widthItem: number = 280 + 30;
+        const itensPerWindow: number = Math.floor(widthWindow / widthItem);
+        const carouselPagesCount: number = carrouselItens.length - itensPerWindow;
 
-        if(position >= 2){
-            transformPixels = (position - 2) * widthItem;
-            carousel.style.transform = `${translate}(-${transformPixels}px)`;
-        }
+        let positionNow: number = carouselPosition;
+        
+        forWard ? positionNow++ : positionNow--;
+
+        if(positionNow > 0){
+            setViewButtonBack(true);
+        } else {
+            setViewButtonBack(false);
+        };
+
+        if(positionNow >= carouselPagesCount){
+            setViewButtonFor(false);
+        } else {
+            setViewButtonFor(true);
+        };
+
+        carousel.style.transform = `translateX(-${widthItem * positionNow}px)`;
+
+        setCarouselPosition(positionNow);
     }
 
     return(
@@ -56,7 +65,7 @@ function Home() {
                 <aside className='texts'>
                     <h1>Sobre nós</h1>
                     <p>
-                        Usamos a Tecnologia para implementar soluções de Segurança e Infraestrutura para sua Empresa e para o seu lar.
+                        Usamos Tecnologia para implementar soluções de Segurança e infraestrutura em empresa e no seu lar.
                     </p>
                     <p>
                         Conte com profissionais qualificados para acompanhar você desde a venda, instalação, treinamento e manutenção dos seus equipamentos.
@@ -69,40 +78,44 @@ function Home() {
                 </aside>                
             </section>
             <section className='works'>
-                <article className='itens'>                   
-                    <div className='content'>
-                        <div className='carousel' id='carousel'>
-                            {
-                                carrouselItens.map((item, index) => {
-                                    return <ItemCarousel image={item.image}
-                                                         category={item.category}
-                                                         description={item.description}
-                                                         selectItem={() => selectItem(item, index)}
-                                                         selected={item == viewItem}
-                                                         key={index}
-                                            />
-                                })
-                            }
-                        </div>                        
-                    </div>                  
-                </article>
-                <article className='viewItemSelect'>
-                    <div className='image'>
-                        <img src={viewItem.image}/>
-                    </div>
-                    <div className='description'>
-                        <h1>
-                            {viewItem.category}
-                        </h1>
-                        <p>
-                            {viewItem.description}
-                        </p>
-                        <Button text='Produtos'
-                                style='button-primary'
-                                handleClick={() => navigate('/produtos')}
-                        />                      
-                    </div>
-                </article>
+                <h1>
+                    Nossos serviços por categoria
+                </h1>
+                <div className='content'>
+                    {viewButtonBack && 
+                        <MdArrowBack className='arrow back' onClick={() => spinCarousel('left')}/>
+                    }
+                    <div className='carousel' id='carousel'>
+                        {
+                        carrouselItens.map((item, index) => {
+                            return (
+                                <div className='item' key={index} onClick={() => setViewItem(item)}>
+                                    <div className='image-item'>
+                                        <img src={item.image} />
+                                    </div>
+                                    <div className='details'>
+                                        <div className='description'>
+                                            <h1>
+                                                {item.category}
+                                            </h1>
+                                            <p>
+                                                {item.description}
+                                            </p>
+                                            <Button text='Produtos'
+                                                    style='button-primary'
+                                                    handleClick={() => navigate('/produtos')}
+                                            />                      
+                                        </div>
+                                    </div>
+                                </div>
+                            )
+                        })
+                        }
+                    </div>  
+                    {viewButtonFor && 
+                        <MdArrowForward className='arrow for' onClick={() => spinCarousel('right')}/>
+                    }                      
+                </div>
             </section>
             <section className='steps'>
                 <span className='progress'></span>
