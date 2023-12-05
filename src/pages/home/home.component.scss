@@ -360,13 +360,21 @@
     .steps{
         height: 650px;
 
+        gap: 30px;
+
         .progress{
             height: 500px;
         }
         
         article{
+            div{
+                width: 60px;
+                height: 60px;            
+            }
+
             p{
-                width: 240px;
+                width: 220px;
+                font-size: 14px;
             }
         }
     }
