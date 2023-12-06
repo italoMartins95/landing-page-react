@@ -183,15 +183,19 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 8vh;
+    gap: 30px;
 
     padding: 30px 0;
 
     article{
+        position: relative;
+
         display: flex;
         align-items: center;
-        justify-content: center;
-        gap: 4vw;
+        justify-content: flex-start;
+
+        width: calc(100% - 200px);
+        padding: 0 100px;
 
         p{
             display: flex;
@@ -207,15 +211,17 @@
 
             font-family: 'Inter';
             text-align: justify;
+            font-size: 18px;
+            font-weight: 300;
 
             padding: 0 20px;
-
-            &.hidden{
-                box-shadow: none;
-            }
         }
 
         div{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+
             display: flex;
             align-items: center;
             justify-content: center;
@@ -234,6 +240,10 @@
                 color: white;
             }
         }
+
+        &.reverse{
+            flex-direction: row-reverse;
+        }
     }
 
     .progress{
@@ -243,7 +253,7 @@
         transform: translate(-50%, -50%);
 
         width: 4px;
-        height: 70vh;
+        height: calc((5 * 30px) + (5 * 120px));
 
         background-color: #505050;
         z-index: -1;
@@ -275,6 +285,44 @@
                 width: 410px;
                 height: 410px;
             }
+        }
+    }
+
+    .steps{    
+        article{    
+            width: calc(100% - 40px);
+            padding: 0 20px;
+    
+            p{
+                width: 350px;
+            }
+    
+            div{
+                width: 60px;
+                height: 60px;
+    
+                svg{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+    
+            &.reverse{
+                flex-direction: row-reverse;
+            }
+        }
+    
+        .progress{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+    
+            width: 4px;
+            height: calc((5 * 30px) + (5 * 120px));
+    
+            background-color: #505050;
+            z-index: -1;
         }
     }
 }
@@ -357,21 +405,8 @@
         }
     }
 
-    .steps{
-        height: 650px;
-
-        gap: 30px;
-
-        .progress{
-            height: 500px;
-        }
-        
+    .steps{        
         article{
-            div{
-                width: 60px;
-                height: 60px;            
-            }
-
             p{
                 width: 220px;
                 font-size: 14px;
@@ -455,14 +490,10 @@
     }
 
     .steps{
-        .progress{
-            left: 14%;
-            transform: translate(-60%, -50%);
-        }
-
         article{
-            gap: 10px;
-            justify-content: space-around;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            gap: 16px;
 
             padding: 0 16px;
 
@@ -471,24 +502,20 @@
 
                 font-size: 14px;
             }
-            
+
             div{
-                width: 60px;
-                height: 60px;
-
-                svg{
-                    width: 30px;
-                    height: 30px;
-                }
-            }
-
-            .hidden{
-                display: none;
+                position: relative;
+                left: 0;
+                transform: translateX(0);
             }
 
             &.reverse{
-                flex-direction: row-reverse;
+                justify-content: space-between;
             }
+        }
+
+        .progress{
+            left: 46px;
         }
     }
 }

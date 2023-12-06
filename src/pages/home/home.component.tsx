@@ -6,6 +6,8 @@ import { SlHandbag } from "react-icons/sl";
 import { LiaFileContractSolid } from "react-icons/lia";
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { RiVerifiedBadgeLine } from "react-icons/ri";
+import { FaRegUser } from "react-icons/fa";
+import { PiHandshake } from "react-icons/pi";
 
 import './home.component.scss';
 
@@ -25,7 +27,7 @@ function Home() {
                 <aside className='texts'>
                     <h1>Sobre nós</h1>
                     <p>
-                        Usamos Tecnologia para implementar soluções de Segurança e infraestrutura em empresa e no seu lar.
+                        Usamos Tecnologia para implementar soluções de Segurança e infraestrutura em sua empresa e no seu lar.
                     </p>
                     <p>
                         Conte com profissionais qualificados para acompanhar você desde a venda, instalação, treinamento e manutenção dos seus equipamentos.
@@ -39,7 +41,7 @@ function Home() {
             </section>
             <section className='works'>
                 <h1>
-                    Nossos serviços por categoria
+                    Serviços por categoria
                 </h1>
                 <article className='content'>  
                 {
@@ -75,34 +77,46 @@ function Home() {
                     <div>
                         <SlHandbag />
                     </div>
-                    <p className='hidden'></p>
                 </article>
                 <article>
-                    <p className='hidden'></p>
-                    <div>
-                        <MdOutlineMarkEmailUnread />
-                    </div>
                     <p>
                         Solicite um orçamento para os itens que você escolheu
-                    </p>                    
+                    </p>
+                    <div>
+                        <MdOutlineMarkEmailUnread />
+                    </div>                    
                 </article>
-                <article className='reverse'>
+                <article  className='reverse'>
+                    <p>
+                        Realize o seu cadastro com algumas informações simples como nome, email e telefone para que possamos montar a sua proposta
+                    </p>
+                    <div>
+                        <FaRegUser />
+                    </div>                    
+                </article>
+                <article>
                     <p>
                         Dentro de poucos minutos você receberá uma proposta com a descrição dos equipamentos e serviços escolhidos por você
                     </p>
                     <div>
                         <LiaFileContractSolid />
                     </div>
-                    <p className='hidden'></p>
                 </article>
-                <article>
-                    <p className='hidden'></p>
+                <article className='reverse'>
+                    <p>
+                        Se você ficar satisfeito com a proposta, fechamos o negocio e um proficional qualificado irá até você para realizar a sua instalação completa
+                    </p>
+                    <div>
+                        <PiHandshake />
+                    </div>                    
+                </article>
+                <article >
+                    <p>
+                        Em nossa área para os clientes, você poderá acompanhar todas as suas compras e visualizar se os seus equipamentos estão em garantia.
+                    </p>
                     <div>
                         <RiVerifiedBadgeLine />
-                    </div>
-                    <p>
-                        Negócio fechado! Um proficional vai até você para realizar a sua instalação completa.
-                    </p>
+                    </div>                    
                 </article>
             </section>
         </main>
