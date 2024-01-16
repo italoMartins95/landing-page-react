@@ -1,4 +1,85 @@
 footer{
+    display: flex;
+
     height: 400px;
     background-color: #505050;
+    color: white;
+
+    font-family: 'Inter';
+
+    padding: 40px;
+    
+    aside{
+        display: flex;
+        width: 50%;
+
+        &.left{            
+            flex-direction: column;
+            justify-content: flex-end;          
+    
+            .contacts{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+            }
+        }
+
+        &.right{
+            justify-content: flex-end;
+            gap: 20px;
+
+            .address{
+                display: flex;
+                flex-direction: column-reverse;
+                gap: 6px;
+                padding-bottom: 60px;
+            }
+            .mapFooter{
+                width: 400px;
+                height: 100%;
+
+                border-radius: 6px;
+                overflow: hidden;
+            }
+        }              
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .right{
+        flex-direction: column;
+
+        width: 60%;
+
+        .address{
+            padding-bottom: 0 !important;
+        }
+    }  
+}
+
+@media only screen and (max-width: 430px) {
+    footer{
+        flex-direction: column;
+        gap: 10px;
+            
+        padding: 20px;
+
+        aside{
+            width: 100%;
+            height: 50%;
+
+            &.right{
+                width: 100%;
+                height: 300px;
+
+                .address{
+                    display: none;
+                }
+
+                .mapFooter{
+                    width: 100%;
+                }
+            }
+        }
+    }  
 }
