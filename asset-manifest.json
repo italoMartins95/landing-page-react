@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/landing-page-react/static/css/main.76ad1083.css",
-    "main.js": "/landing-page-react/static/js/main.1f55c636.js",
+    "main.css": "/landing-page-react/static/css/main.4383ee1b.css",
+    "main.js": "/landing-page-react/static/js/main.44873bf8.js",
     "static/js/787.f08d3e1d.chunk.js": "/landing-page-react/static/js/787.f08d3e1d.chunk.js",
     "static/media/catracas.png": "/landing-page-react/static/media/catracas.8c077d2ca286004a855b.png",
     "static/media/interfone.png": "/landing-page-react/static/media/interfone.306f20c10ab680b996e6.png",
@@ -9,13 +9,32 @@
     "static/media/ctfv.png": "/landing-page-react/static/media/ctfv.749b7fb68536f12a6392.png",
     "static/media/acesso.png": "/landing-page-react/static/media/acesso.4e02f003618e64ee45c1.png",
     "static/media/wellcome.image.png": "/landing-page-react/static/media/wellcome.image.8a9f59cc121a2f2157e0.png",
+    "static/media/idFlex.webp": "/landing-page-react/static/media/idFlex.833d3bce1895c98c5ba5.webp",
+    "static/media/central-de-alarme.png": "/landing-page-react/static/media/central-de-alarme.b9cd45ee8579138515a5.png",
+    "static/media/camera_hilook.png": "/landing-page-react/static/media/camera_hilook.7b872d88f397cff2f74a.png",
+    "static/media/catraca_idblock.png": "/landing-page-react/static/media/catraca_idblock.a849f7540c9e5e0c0488.png",
+    "static/media/controles_radiofrequencia.png": "/landing-page-react/static/media/controles_radiofrequencia.d109e925ffb65454e0b1.png",
+    "static/media/interfone_video_intelbras.png": "/landing-page-react/static/media/interfone_video_intelbras.35a256954f2f002fa80a.png",
+    "static/media/fechadura_eletromagnetica.png": "/landing-page-react/static/media/fechadura_eletromagnetica.f05bb5150da35e0c4b90.png",
+    "static/media/sensor_infravermelho.png": "/landing-page-react/static/media/sensor_infravermelho.e0e77b7de2150182e58e.png",
+    "static/media/kdz_tsi.png": "/landing-page-react/static/media/kdz_tsi.c82984d74f8e739658b1.png",
+    "static/media/fechadura_eletrica_intelbras.png": "/landing-page-react/static/media/fechadura_eletrica_intelbras.fc052fbd29c3ec3937f1.png",
+    "static/media/fechadura_eletronica_intelbras_1.png": "/landing-page-react/static/media/fechadura_eletronica_intelbras_1.51775e5c7fb290b62ff2.png",
+    "static/media/camera_bullet.png": "/landing-page-react/static/media/camera_bullet.cbc81179338c1c7f09e5.png",
+    "static/media/interfone_intelbras.png": "/landing-page-react/static/media/interfone_intelbras.383cb678de84ddd817ff.png",
+    "static/media/camera_bullet_wifi.png": "/landing-page-react/static/media/camera_bullet_wifi.db48fc9ab3b114e33075.png",
+    "static/media/catraca_fit_3_urna.png": "/landing-page-react/static/media/catraca_fit_3_urna.382e9509b76929121e87.png",
+    "static/media/catraca_fit_3_antipanico.png": "/landing-page-react/static/media/catraca_fit_3_antipanico.70aecd7117933fa951c1.png",
+    "static/media/videoporteiro_prox.png": "/landing-page-react/static/media/videoporteiro_prox.0bbf1b838fece1ab672f.png",
+    "static/media/dvr.png": "/landing-page-react/static/media/dvr.2cc991ce80bb9465f488.png",
+    "static/media/marker.icon.svg": "/landing-page-react/static/media/marker.icon.8ff8709a0882aa2cebb809b5f67bee5f.svg",
     "index.html": "/landing-page-react/index.html",
-    "main.76ad1083.css.map": "/landing-page-react/static/css/main.76ad1083.css.map",
-    "main.1f55c636.js.map": "/landing-page-react/static/js/main.1f55c636.js.map",
+    "main.4383ee1b.css.map": "/landing-page-react/static/css/main.4383ee1b.css.map",
+    "main.44873bf8.js.map": "/landing-page-react/static/js/main.44873bf8.js.map",
     "787.f08d3e1d.chunk.js.map": "/landing-page-react/static/js/787.f08d3e1d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.76ad1083.css",
-    "static/js/main.1f55c636.js"
+    "static/css/main.4383ee1b.css",
+    "static/js/main.44873bf8.js"
   ]
 }

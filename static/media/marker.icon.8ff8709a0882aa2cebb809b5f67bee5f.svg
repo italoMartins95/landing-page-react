@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" height="42" viewBox="0 0 42 42">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.35;
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-3 {
+        fill: rgba(255,255,255,0.56);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.522" y1="0.121" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#919492" stop-opacity="0"/>
+      <stop offset="1" stop-color="#1a1a1a"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="red"/>
+      <stop offset="1" stop-color="#ff5c5c"/>
+    </linearGradient>
+  </defs>
+  <g id="map-pin" transform="translate(-163 -246.645)">
+    <path id="Caminho_349" data-name="Caminho 349" class="cls-1" d="M4.752,0H8.91a4.752,4.752,0,0,1,4.752,4.752l-.155,17.387-8.754.432A4.752,4.752,0,0,1,0,17.819V4.752A4.752,4.752,0,0,1,4.752,0Z" transform="translate(195.825 265.269) rotate(60)"/>
+    <path id="Retângulo_1064" data-name="Retângulo 1064" class="cls-2" d="M14.849,0h0A14.849,14.849,0,0,1,29.7,14.849V28.107A1.591,1.591,0,0,1,28.107,29.7H14.849A14.849,14.849,0,0,1,0,14.849v0A14.849,14.849,0,0,1,14.849,0Z" transform="translate(184 246.645) rotate(45)"/>
+    <circle id="Elipse_114" data-name="Elipse 114" class="cls-3" cx="2.376" cy="2.376" r="2.376" transform="translate(181.413 265.269)"/>
+  </g>
+</svg>
