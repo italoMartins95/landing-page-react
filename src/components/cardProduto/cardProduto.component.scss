@@ -11,6 +11,7 @@
     border-radius: 4px;
 
     padding: 20px;
+    margin-bottom: 20px;
 
     font-family: 'Inter';
 
@@ -28,5 +29,50 @@
     
         border-top: 2px solid #50505075;
         padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+   .product{
+        width: 170px;
+        height: 300px;
+
+        img{
+            height: 150px;
+        }
+
+        div{
+            gap: 12px;
+
+            p{
+                font-size: 14px;
+            }
+        }
+   }
+}
+
+@media only screen and (max-width: 430px) {
+    .product{
+        width: 140px;
+        height: 226px;
+
+        img{
+            height: 100px;
+        }
+
+        div{
+            gap: 10px;
+            padding-top: 6px;
+
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .product{
+        width: 122px;
     }
 }

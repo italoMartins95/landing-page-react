@@ -58,3 +58,11 @@
 
     cursor: pointer;
 }
+
+@media only screen and (max-width: 770px) {
+    .button-primary{
+        padding: 10px;
+        gap: 10px;
+        justify-content: center !important;
+    }
+}

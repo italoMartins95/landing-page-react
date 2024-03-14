@@ -10,7 +10,7 @@ import './products.component.scss'
 function Products(){
 
     return (
-        <section>
+        <section className='conteniner'>
             <section className='sections'>
                 <h2>
                     CFTV

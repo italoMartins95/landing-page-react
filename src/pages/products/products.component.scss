@@ -1,4 +1,4 @@
-section{
+.conteniner{
     padding: 100px 0;
 
     .sections{
@@ -24,3 +24,28 @@ section{
     }
 }
 
+
+@media only screen and (max-width: 1250px) {
+    .conteniner{
+        padding: 50px 0;
+
+        .sections{
+            padding: 0 40px 50px 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .conteniner{
+        padding: 20px 0;
+
+        .sections{
+            gap: 12px;
+            padding: 0 20px 30px 20px;
+
+            h2{
+                font-size: 24px;
+            }
+        }
+    }
+}

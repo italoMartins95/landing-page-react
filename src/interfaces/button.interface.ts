@@ -1,6 +1,8 @@
+import { ReactNode } from "react";
+
 export interface IButton {
     text: string;
     style: string;
-    icon?: boolean
+    children?: ReactNode;
     handleClick(): void;
 }
