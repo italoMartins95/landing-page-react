@@ -60,7 +60,7 @@ function Header() {
                             <Link to="/produtos" className='Link'>Produtos</Link>
                         </li>
                         <li onClick={() => openCloseMenus('nav', false)}>
-                            <Link to="/area-cliente" className='Link'>Área do cliente</Link>
+                            <Link to="/login" className='Link'>Área do cliente</Link>
                         </li>
                     </ul>
                 </nav>

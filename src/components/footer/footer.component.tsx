@@ -1,7 +1,13 @@
-import GoogleMaps from '../googleMap/googleMap.component';
+import location from '../../images/location.png'
+
 import './footer.component.scss';
 
 function Footer(){
+
+    const runAddressMap = () => {
+        window.open('https://maps.app.goo.gl/e2CWN329mEqiVUb2A', '_blank')
+    }
+
     return(
         <footer>
             <aside className='left'>
@@ -24,9 +30,7 @@ function Footer(){
                     <p>Rua grande Oriente, n° 284,</p>
                 </div>
                 <div className='mapFooter'>
-                    <GoogleMaps lat={-8.017213878492964}
-                                lng={-34.96859181634934}
-                    />
+                    <img src={location} onClick={runAddressMap}/>
                 </div>
             </aside>
         </footer>
